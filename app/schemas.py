@@ -16,3 +16,12 @@ class Matricula (MatriculaBase):
 
 class Config:
     from_attributes=True
+
+class MatriculaResponse(MatriculaBase):
+    impuesto: float
+    codigo_revision: str
+
+    model_config = {
+        "from_attributes": True
+    }
+
